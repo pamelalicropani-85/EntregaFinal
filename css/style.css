@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  background-color: #ededca;
+  color: hsl(0, 23%, 3%);
+}
+
+.header {
+  color: white;
+  text-align: center;
+  padding: 24px;
+  background: #f2cf91;
+  background: linear-gradient(90deg, rgba(242, 207, 145, 1) 0%, rgba(148, 214, 175, 1) 50%, rgba(237, 226, 128, 1) 100%);
+}
+
+.contenedorPrincipal {
+  width: 90%;
+  max-width: 1300px;
+  margin: 30px auto;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.panelLibros {
+  flex: 3;
+}
+
+.panelLibros h2,
+.panelCarrito h2 {
+  margin-bottom: 16px;
+}
+
+#filtroCategoria {
+  margin: 12px 0 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+}
+
+.grillaLibros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.cardLibro {
+  background-color: white;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(211, 72, 7, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLibro h3 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardLibro p {
+  margin-bottom: 8px;
+}
+
+.panelCarrito {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#carrito {
+  list-style: none;
+  margin: 16px 0;
+}
+
+.itemCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#total {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.accionesCarrito {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botonAgregar,
+.botonEliminar,
+#vaciarCarrito,
+#mostrarFormularioCompra,
+.formularioCompra button {
+  background-color: #e8955d;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.formularioCompra {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formularioCompra input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.comprobante {
+  margin-top: 20px;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.comprobante h3 {
+  margin-bottom: 12px;
+}
+
+.comprobante p {
+  margin-bottom: 8px;
+}
+
+.comprobante ul {
+  margin: 10px 0 10px 20px;
+}
+
+.oculto {
+  display: none;
+}

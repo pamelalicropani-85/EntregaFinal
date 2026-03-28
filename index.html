@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda online de libros</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <script src="./js/carrito.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <header class="header">
+    <h1>Tienda online de libros</h1>
+  </header>
+
+  <main class="contenedorPrincipal">
+    <section class="panelLibros">
+      <h2>Catálogo</h2>
+
+      <label for="filtroCategoria">Filtrar por categoría:</label>
+      <select id="filtroCategoria">
+        <option value="todas">Todas</option>
+      </select>
+
+      <div id="listaDeLibros" class="grillaLibros"></div>
+    </section>
+  
+    <aside class="panelCarrito">
+      <h2>Carrito</h2>
+      <ul id="carrito"></ul>
+      <p id="total">Total: $0</p>
+
+      <div class="accionesCarrito">
+        <button id="vaciarCarrito">Vaciar carrito</button>
+        <button id="mostrarFormularioCompra">Comprar</button>
+      </div>
+
+      <form id="formularioCompra" class="formularioCompra oculto">
+        <h3>Datos del comprador</h3>
+
+        <input type="text" id="nombreComprador" placeholder="Nombre completo">
+        <input type="email" id="emailComprador" placeholder="Correo electrónico">
+        <input type="text" id="direccionComprador" placeholder="Dirección de entrega">
+  
+        <button id="botonFinalizar">Finalizar Compra</button>
+      </form>
+
+      <div id="comprobante" class="oculto"></div>
+    </aside>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

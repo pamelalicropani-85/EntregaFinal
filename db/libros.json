@@ -1,0 +1,14 @@
+[
+  { "id": 1, "categoria": "Novela", "nombre": "Sobre héroes y tumbas", "precio": 30000},
+  { "id": 2, "categoria": "Novela", "nombre": "Rayuela", "precio": 40000},
+  { "id": 3, "categoria": "Novela", "nombre": "Boquitas pintadas", "precio": 25000},
+  { "id": 4, "categoria": "Ciencia Ficción", "nombre": "El Eternauta", "precio": 50000},
+  { "id": 5, "categoria": "Ciencia Ficción", "nombre": "Kalpa Imperial", "precio": 20000},
+  { "id": 6, "categoria": "Ciencia Ficción", "nombre": "Los sorias", "precio": 37000},
+  { "id": 7, "categoria": "Autoayuda", "nombre": "El camino de la autodependencia", "precio": 56000},
+  { "id": 8, "categoria": "Autoayuda", "nombre": "Déjame que te cuente", "precio": 28000},
+  { "id": 9, "categoria": "Autoayuda", "nombre": "El secreto de las siete semillas", "precio": 15000},
+  { "id": 10, "categoria": "Cocina", "nombre": "El libro de Doña Petrona", "precio": 70000},
+  { "id": 11, "categoria": "Cocina", "nombre": "Cocina argentina", "precio": 47000},
+  { "id": 12, "categoria": "Cocina", "nombre": "Bendita cocina", "precio": 32000}
+]
