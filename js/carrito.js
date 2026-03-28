@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
 
     const nombre = document.getElementById("nombreComprador").value;
-    const email = document.getElementById("emailComprador").valu;
+    const email = document.getElementById("emailComprador").value;
     const direccion = document.getElementById("direccionComprador").value;
 
     if (!nombre || !email || !direccion) {
